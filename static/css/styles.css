@@ -1,0 +1,70 @@
+/* Reset some default styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li {
+    margin: 0 1em;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero section styles */
+#hero {
+    /* background-image: url('/static/images/IT_LOGO.jpg'); */
+    background-size: cover;
+    background-position: center;
+    color: #7e1111;
+    text-align: center;
+    padding: 5em 0; 
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Other section styles */
+.container {
+    max-width: 800px;
+    margin: 2em auto;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
