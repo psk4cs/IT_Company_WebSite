@@ -1,68 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/styles.css">
-    <title>Team 5 IT Consultancy</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">Team 5 IT Consultancy</div>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#why-us">Why Choose Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <section id="hero">
-        <div class="hero-content">
-            <h1>Welcome to <B>Team 5 IT Consultancy</B></h1>
-            <p>Empowering Innovation, Driving Excellence</p>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>It Company Website</title>
+  </head>
+  <body>
+    <div class="header">
+      <a href="#home"><img src="logo.png" /></a>
+
+      <!-- Burger menu -->
+      <div class="burger-menu" onclick="toggleNavbar()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+
+      <!-- Navigation links -->
+      <nav class="navbar">
+        <a href="#home" style="--i: 1" class="active">Home</a>
+        <a href="#about" style="--i: 2">About</a>
+        <a href="#projects" style="--i: 3">Projects</a>
+        <a href="#projects" style="--i: 3">Achivements</a>
+        <a href="#skills" style="--i: 4">Services</a>
+        <a href="#contact" style="--i: 5">Contact</a>
+      </nav>
+    </div>
+    <section class="home" id="home">
+      <div class="home-img">
+        <img src="image1.jpg" alt="" />
+      </div>
+      <div class="home-content">
+        <h3>Hello,We are <span class="wave">👋</span></h3>
+        <h1><span>Tech</span> Sync.</h1>
+        <h3>And We are <span class="multiple-text"></span></h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum
+          delectus, sint itaque qui magni dolores odit autem incidunt nobis
+          dignissimos aliquam accusantium pariatur, quidem quas. Voluptas minima
+          magni ut recusandae.
+        </p>
+        <div class="social-media">
+          <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+          <a href="" style="--i: 7"><i class="bx bxl-github"></i></a>
+          <a href="" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+          <a href="" style="--i: 9"><i class="bx bxl-whatsapp"></i></a>
         </div>
+        <a href="" class="btn">Get started</a>
+      </div>
     </section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Us</h2>
-            <p><B>Team 5 It Consultancy</B>is a leading IT solutions provider dedicated to delivering cutting-edge technology solutions...</p>
+    <!-- about section -->
+    <section class="about" id="about">
+      <div class="about-content">
+        <h2 class="heading">About<span> Us</span></h2>
+        <div class="new">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
+            amet suscipit quis saepe debitis, omnis non nostrum reiciendis
+            aperiam ullam, voluptatum laboriosam quidem vel corporis deleniti
+            excepturi architecto, porro repellendus! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Sapiente molestias provident odit
+            laboriosam rem animi distinctio nemo nostrum sunt nihil velit
+            reiciendis, voluptatem minus porro, voluptates nobis voluptas
+            quaerat neque?
+          </p>
+
+          <div class="btn-box btns">
+            <a href="#" class="btn">Read More</a>
+          </div>
         </div>
+      </div>
+
+      <div class="about-img">
+        <img src="image2.jpg" />
+        <span class="circle-spin"></span>
+      </div>
     </section>
 
-    <section id="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <!-- Add service details here -->
+    <!-- Achivements !-->
+    <section class="achievements" id="achievement">
+      <h2 class="heading">Our <span>Achivements</span></h2>
+      <div class="achievements-row">
+        <div class="achievements-coloumn">
+          <div class="achievements-box">
+            <div class="achievements-content">
+              <div class="content">
+                <div class="year"><i class="bx bxs-calendar"></i>June 2023</div>
+                <h3>XYZ</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Numquam nulla ratione temporibus eos quasi non fugit neque,
+                  recusandae dolore cumque quia at? Iure, dolorem? Id
+                  reprehenderit veritatis adipisci tenetur aspernatur?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="achievements-content">
+            <div class="content">
+              <div class="year">
+                <i class="bx bxs-calendar"></i>October 2023
+              </div>
+              <h3>XYZ</h3>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Similique quia nemo hic soluta at natus, delectus doloremque
+                dicta quam, omnis adipisci quisquam exercitationem ex illo iure
+                numquam suscipit, saepe vero?
+              </p>
+            </div>
+          </div>
+
+          <div class="achievements-content">
+            <div class="content">
+              <div class="year">
+                <i class="bx bxs-calendar"></i>November 2023
+              </div>
+              <h3>XYZ</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repudiandae sint aperiam ducimus, nihil eius, perferendis iure
+                mollitia incidunt id ut fugiat animi error deleniti? Quas
+                repudiandae eos quasi magnam qui?
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="why-us">
-        <div class="container">
-            <h2>Why Choose Us</h2>
-            <!-- Add reasons to choose   company here -->
+    <!-- Certification !-->
+    <section class="portfolio" id="portfolio">
+      <h2 class="heading">Our<span> Team</span></h2>
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="img2.jpg" alt="Certificate 1" />
+          <div class="portfolio-layer">
+            <h2>Mr. Dipak Khude</h2>
+            <h3><b>CEO</b></h3>
+            <div class="social-media">
+              <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+              <a href="" style="--i: 7"><i class="bx bxl-github"></i></a>
+              <a href="" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
         </div>
+
+        <div class="portfolio-box">
+          <img src="img1.jpg" alt="Certificate 1" />
+          <div class="portfolio-layer">
+            <h2>Mrs. Kumari Rao</h2>
+            <h3><b>Chief Secretory</b></h3>
+            <div class="social-media">
+              <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+              <a href="" style="--i: 7"><i class="bx bxl-github"></i></a>
+              <a href="" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="img3.jpg" alt="Certificate 1" />
+          <div class="portfolio-layer">
+            <h2>Mr. Mohan Lal</h2>
+            <h3><b>Frontend Developer</b></h3>
+            <div class="social-media">
+              <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+              <a href="" style="--i: 7"><i class="bx bxl-github"></i></a>
+              <a href="" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="img4.jpg" alt="Certificate 1" />
+          <div class="portfolio-layer">
+            <h2>Mrs. Emily Rodriguez</h2>
+            <h3><b>UX/UI Designer</b></h3>
+            <div class="social-media">
+              <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+              <a href="" style="--i: 7"><i class="bx bxl-github"></i></a>
+              <a href="" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="img5.jpg" alt="Certificate 1" />
+          <div class="portfolio-layer">
+            <h2>Mr. Marcus Carter</h2>
+            <h3><b>Full Stack Developer</b></h3>
+            <div class="social-media">
+              <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+              <a href="" style="--i: 7"><i class="bx bxl-github"></i></a>
+              <a href="" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="img6.jpg" alt="Certificate 1" />
+          <div class="portfolio-layer">
+            <h2>Mrs. Olivia Chang</h2>
+            <h3><b>Data Scientist</b></h3>
+            <div class="social-media">
+              <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+              <a href="" style="--i: 7"><i class="bx bxl-github"></i></a>
+              <a href="" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="img7.jpg" alt="Certificate 1" />
+          <div class="portfolio-layer">
+            <h2>Mr. Jamal Patel</h2>
+            <h3><b>Digital Marketing Specialist</b></h3>
+            <div class="social-media">
+              <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+              <a href="" style="--i: 7"><i class="bx bxl-github"></i></a>
+              <a href="" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-box">
+          <img src="img2.jpg" alt="Certificate 1" />
+          <div class="portfolio-layer">
+            <h2>Mr. Hannah Bennett</h2>
+            <h3><b>Cybersecurity Analyst</b></h3>
+            <div class="social-media">
+              <a href="#" style="--i: 6"><i class="bx bxl-facebook"></i></a>
+              <a href="" style="--i: 7"><i class="bx bxl-github"></i></a>
+              <a href="" style="--i: 8"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form id="contact-form">
-                <!-- Add contact form fields here -->
-                <button type="submit">Submit</button>
-            </form>
+    <!-- Projects !-->
+    <section class="swiper mySwiper" id="projects">
+      <h2 class="heading">Our <span>Projects</span></h2>
+      <div class="swiper-wrapper">
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="img11.jpg" alt="card image" />
+          </div>
+
+          <div class="card__content">
+            <span class="card__title">Custom Software Development</span>
+
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              debitis delectus iusto rem molestiae commodi in itaque quasi,
+              excepturi ut aliquid quis dolores reprehenderit sequi praesentium!
+              Esse sint facere earum.
+            </p>
+            <a href=""> <button class="card__btn">more</button></a>
+          </div>
         </div>
+
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="img12.jpg" alt="card image" />
+          </div>
+
+          <div class="card__content">
+            <span class="card__title">Website Development:</span>
+
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+              possimus accusantium fugit ratione neque perspiciatis modi minus
+              dolores accusamus numquam asperiores ea quisquam rerum,
+              dignissimos suscipit consequuntur quis amet praesentium?
+            </p>
+            <a href=""><button class="card__btn">more</button></a>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="img15.jpg" alt="card image" />
+          </div>
+
+          <div class="card__content">
+            <span class="card__title">Mobile App Development</span>
+
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              explicabo a. Rem amet deleniti explicabo fuga aspernatur illo
+              eaque, ratione nam error, tempore, impedit aliquid quae possimus
+              similique voluptatibus maxime.
+            </p>
+            <a href="">
+              <button class="card__btn">more</button>
+            </a>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="img13.jpg" alt="card image" />
+          </div>
+
+          <div class="card__content">
+            <span class="card__title">E-commerce Solutions</span>
+
+            <p class="card__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus error molestiae mollitia laboriosam, aliquam
+              voluptatem accusamus odit ratione ipsum quisquam sint beatae odio
+              harum tempore quia quibusdam laborum dolor. Voluptatem?
+            </p>
+            <a href=""> <button class="card__btn">more</button></a>
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="card__image">
+            <img src="img14.jpg" alt="card image" />
+          </div>
+
+          <div class="card__content">
+            <span class="card__title">Cloud Migration</span>
+
+            <p class="card__text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illum
+              sit officia? Cum iusto debitis repellat qui quos dolores impedit
+              porro, ab dignissimos omnis recusandae sed voluptatem,
+              consequuntur fugiat reprehenderit!
+            </p>
+            <a href=""><button class="card__btn">more</button></a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 <B>Team 5 IT Consultancy</B>. All Rights Reserved. | <a href="#privacy-policy">Privacy Policy</a></p>
+    <!-- Hobbies-->
+    <div class="container">
+      <section class="Projects">
+        <h2 class="heading">Our <span>Services</span></h2>
+        <div class="product">
+          <img src="img8.jpg" alt="Product Image" />
+          <br />
+          <h3>Data Analyst</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            debitis accusamus atque magnam dicta placeat amet
+          </p>
+          <br />
+          <br />
         </div>
-    </footer>
+        <div class="product">
+          <img src="img9.jpg" alt="Product Image" />
+          <br />
+          <h3>Software Developement</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+            debitis accusamus atque magnam dicta placeat amet
+          </p>
 
-    <script src="/static/js/script.js"></script>
-</body>
+          <br />
+          <br />
+        </div>
+        <div class="product">
+          <img src="img10.jpg" alt="Product Image" />
+          <br />
+          <h3>IT Consulting</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+            minus adipisci hic, vero inventore aspernatur optio quas voluptatem.
+          </p>
+
+          <br />
+          <br />
+        </div>
+      </section>
+    </div>
+
+    <!--   Contact -->
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Us</span></h2>
+      <form action="#" method="post">
+        <div class="input-box">
+          <div class="input-field">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name.."
+              required
+            />
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email id"
+              required
+            />
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input
+              type="tel"
+              id="mobile"
+              name="mobile"
+              placeholder="Mobile Number"
+              required
+            />
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="date" id="date" name="date" required />
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="textarea-field">
+          <textarea
+            id="message"
+            name="message"
+            cols="40"
+            rows="10"
+            placeholder="Enter Your Message.."
+            required
+          ></textarea>
+          <span class="focus"></span>
+        </div>
+
+        <div class="btn-box btns">
+          <button type="submit" class="btn">Submit</button>
+        </div>
+      </form>
+    </section>
+
+    <section id="footer">
+      <footer>
+        <div id="icon">
+          <div class="ic1">
+            <a href=""></a>
+            <i class="bx bxl-linkedin"></i>
+          </div>
+          <div class="ic1">
+            <a href=""></a>
+            <i class="bx bxl-facebook"></i>
+          </div>
+          <div class="ic1">
+            <a href=""></a>
+            <i class="bx bxl-github"></i>
+          </div>
+
+          <div class="ic1">
+            <a href=""></a>
+            <i class="bx bxl-whatsapp"></i>
+          </div>
+        </div>
+        <p>Copyright © 2023 IT.com All writes reserved</p>
+      </footer>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="index.js"></script>
+    <script>
+      function toggleNavbar() {
+        var navbar = document.querySelector(".navbar");
+        navbar.style.display =
+          navbar.style.display === "block" || navbar.style.display === ""
+            ? "none"
+            : "block";
+      }
+    </script>
+  </body>
 </html>
