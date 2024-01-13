@@ -1039,6 +1039,9 @@ span{
   overflow: hidden;
   display: flex;
 }
+.portfolio-box{
+  margin-top: 2rem;
+}
 
 }
   @media screen and (max-width: 1200px)
