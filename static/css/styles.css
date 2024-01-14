@@ -965,11 +965,11 @@ span{
 }
 
 .about {
-    flex-direction: column; /* Change layout to column for smaller screens */
+    flex-direction: column; 
   }
 
   .about-img {
-    margin-bottom: 2rem; /* Add margin to create space between image and text on mobile */
+    margin-bottom: 2rem; 
   }
 .btn-box.btns{
     display: inline-block;
@@ -986,7 +986,7 @@ span{
   margin-left: 1rem;
   margin-right: 0rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   gap: 0.5rem;
   padding-bottom: 5rem;
