@@ -965,11 +965,11 @@ span{
 }
 
 .about {
-    flex-direction: column; 
+    flex-direction: column; /* Change layout to column for smaller screens */
   }
 
   .about-img {
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem; /* Add margin to create space between image and text on mobile */
   }
 .btn-box.btns{
     display: inline-block;
@@ -983,10 +983,9 @@ span{
   margin-bottom: 0rem;
 }
 .portfolio-container {
-  margin-left: 1rem;
-  margin-right: 0rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
   align-items: center;
   gap: 0.5rem;
   padding-bottom: 5rem;
@@ -996,10 +995,16 @@ span{
   justify-content: center;
   align-items: center;
   display: inline-flex;
+  border: 0.5px solid #FFB562;
   width: 1rem;
   height: 1rem;
+
 }
 
+
+.portfolio-layer .social-media{
+  margin-left: 0.9rem;
+}
 .portfolio-layer h2{
   color: #fff;
   font-size: 5px;
@@ -1011,8 +1016,8 @@ span{
   font-size: 3px;
 }
 .portfolio-layer a i {
-  font-size: 0.5rem;
-  color: #1f5e68;
+  font-size: 0.7rem;
+  color: #eef2f3;
 }
 .portfolio-box .portfolio-layer {
   position: absolute;
